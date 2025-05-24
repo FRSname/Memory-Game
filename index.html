@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pexeso Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pexeso Game</h1>
+  <div id="controls">
+    <label>
+      Enter your nickname:
+      <input type="text" id="nicknameInput" />
+    </label>
+    <label>
+      Choose card set:
+      <select id="cardSetSelect">
+        <option value="">-- Select --</option>
+        <option value="UCK25">UCK25</option>
+        <option value="ITIXO">ITIXO</option>
+      </select>
+    </label>
+    <button id="startButton">Start Game</button>
+    <span>Moves: <span id="moveCounter">0</span></span>
+    <span>Time: <span id="timer">0</span>s</span>
+    <button id="restartButton">Restart</button>
+  </div>
+  <div id="gameContainer">
+    <div id="gameBoard"></div>
+  </div>
+  <div id="scoreboard">
+    <h2>Score Board</h2>
+    <div id="scoreList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
