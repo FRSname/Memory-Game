@@ -20,9 +20,17 @@
         <option value="ITIXO">ITIXO</option>
       </select>
     </label>
+    <label>
+      Select Game Mode:
+      <select id="gameModeSelect">
+        <option value="classic">Classic</option>
+        <option value="timeClash">Time Clash (2 min)</option>
+        <option value="twoPlayers">Two Players</option>
+      </select>
+    </label>
     <button id="startButton">Start Game</button>
     <span>Moves: <span id="moveCounter">0</span></span>
-    <span>Time: <span id="timer">0</span>s</span>
+    <span>Time: <span id="timer">0</span></span>
     <button id="restartButton">Restart</button>
   </div>
   <div id="gameContainer">
@@ -33,5 +41,6 @@
     <div id="scoreList"></div>
   </div>
   <script src="script.js"></script>
+  <canvas id="confettiCanvas"></canvas>
 </body>
 </html>
